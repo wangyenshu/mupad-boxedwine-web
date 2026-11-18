@@ -2,7 +2,7 @@
 
 MuPAD Light 2.5 (SciFace, 2002), the Windows computer algebra system, running in the
 browser on [Boxedwine](https://github.com/danoon2/Boxedwine)'s multi-threaded web build
-with Wine 11. Layout after [elona-boxedwine-web](https://github.com/wangyenshu/elona-boxedwine-web).
+with Wine 11.
 
 ```
 ./build.sh                       # -> dist/
@@ -15,7 +15,7 @@ isolation the multi-threaded build needs (GitHub Pages works).
 Needs bash, curl, unzip, zip, python3 and msitools (`apt install msitools` /
 `brew install msitools`). Options are documented at the top of `build.sh`; by default
 it uses the prebuilt Boxedwine 26R1 web binaries, `BOXEDWINE_BUILD=source` compiles
-them with emscripten like elona-boxedwine-web does (with `patches/`).
+them with emscripten (with `patches/`).
 
 ## Files
 
