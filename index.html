@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MuPAD Light 2.5 in Browser</title>
+<script src="coi-serviceworker.js"></script>
+</head>
+<body>
+<h1>MuPAD Light 2.5 in Browser</h1>
+<p id="status">Loading...</p>
+<canvas id="canvas" width="1024" height="768" tabindex="-1" oncontextmenu="event.preventDefault()"></canvas>
+<p>Click OK on the "unregistered" notice, click the input line, type e.g. <code>int(sin(x)^2, x)</code> and press Enter
+(Shift+Enter starts a new line). Plots such as <code>plotfunc2d(sin(x), x = -PI..PI)</code> open in VCam Light;
+<code>?int</code> opens the help.</p>
+<ul>
+<li>Wait for "Ready, kernel online" in the status bar before pressing Enter on the next input. A new input sent
+while MuPAD is still computing crashes the emulator; reload the page if that happens.</li>
+<li>Don't minimize windows: there is no taskbar to bring them back, and the screen stops updating. Close plot and help windows instead.</li>
+<li>The first start registers MuPAD's programs and takes about a minute; later starts are quicker.</li>
+<li>Files you save (e.g. under <code>C:\users\username\Documents</code>) are kept in this browser (IndexedDB).</li>
+<li>Add <code>?resolution=1280x1024</code> to the URL for a larger screen, <code>?sound=true</code> for sound.</li>
+</ul>
+<h3>Credit:</h3>
+<ul>
+<li>MuPAD Light 2.5 by SciFace Software GmbH &amp; Co. KG and the MuPAD group of the University of Paderborn (<a href="mupad-license.txt">license</a>)</li>
+<li><a href="https://github.com/danoon2/Boxedwine">Boxedwine</a> (<a href="license.txt">license</a>)</li>
+<li><a href="https://github.com/gzuidhof/coi-serviceworker">coi-serviceworker</a></li>
+<li>Layout after <a href="https://github.com/wangyenshu/elona-boxedwine-web">elona-boxedwine-web</a></li>
+</ul>
+<script src="shell.js"></script>
+</body>
+</html>
